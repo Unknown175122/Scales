@@ -163,7 +163,7 @@ void scale(int x, int y){
   beginShape();
   curveVertex(x+15,y);
   curveVertex(x+15,y);
-  curveVertex(x,y+10);
+  curveVertex(x,y+9);
   
   curveVertex(x,y+10);
   curveVertex(x+1,y+15.6);
@@ -178,9 +178,10 @@ void scale(int x, int y){
   curveVertex(x+27,y+21.2);
   curveVertex(x+29,y+15.6);
   curveVertex(x+30,y+10);
-  curveVertex(x+30,y+10);
+  curveVertex(x+30,y+9);
   
   curveVertex(x+15,y);
   curveVertex(x+15,y);
   endShape();
 }
+
