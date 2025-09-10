@@ -1,6 +1,5 @@
 char m = 'a';
 int minRed, maxRed, minGreen, maxGreen, minBlue, maxBlue;
-int ran;
 
 void setup() {
   size(400,400);
@@ -81,6 +80,14 @@ void decideColor(){
     maxGreen = 255;
     maxBlue = 10;
   } else if (m == 'g') {
+    m = 'c';
+    minRed = 0;
+    minGreen = 125;
+    minBlue = 210;
+    maxRed = 10;
+    maxGreen = 255;
+    maxBlue = 255;
+  } else if (m == 'c') {
     m = 'b';
     minRed = 0;
     minGreen = 0;
@@ -140,7 +147,7 @@ void scale(int x, int y){
         (float)Math.random()*(maxBlue-minBlue)+ minBlue
       );
     }else {
-      ran = (int)(Math.random() * 8) +1; //1 to 7
+      int ran = (int)(Math.random() * 8) +1; //1 to 7
       if (ran == 1){
         fill(255,0,0); //red
       } else if (ran == 2) {
@@ -184,4 +191,3 @@ void scale(int x, int y){
   curveVertex(x+15,y);
   endShape();
 }
-
